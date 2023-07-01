@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>My first three.js app</title>
-		<style>
-			body { margin: 0;
-			/* background-image: url('back.jpeg');
-			background-repeat: no-repeat;
-			background-size: cover; */
-			background-color: black;
-		}
-		</style>
-	</head>
-	<body>
-		<script src="main.js" type="module"></script>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(255, 123, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-container button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="button-container">
+    <button onclick="playComputer()">PLAY COMPUTER</button>
+    <button onclick="playOnline()">PLAY ONLINE</button>
+</div>
+
+<script>
+    function playComputer() {
+        window.location.href = 'cpu.html';
+    }
+
+    function playOnline() {
+        // Add your code for the "PLAY ONLINE" functionality here
+    }
+</script>
+</body>
 </html>
